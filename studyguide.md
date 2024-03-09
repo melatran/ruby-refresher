@@ -1,7 +1,7 @@
 # Study Guide
 
 ## Ruby Beginnings
-- [ ]Objects, Instances and Classes
+- []Objects, Instances and Classes
 - [ ]Intro to Testing
 - [ ]Enumerables
 - [ ]Hashes
