@@ -36,44 +36,45 @@ RSpec.describe 'ints and floats' do
     expect(quotient).to eq(1.8571428571428572)
   end
 
-  xit 'test 5' do
+  it 'test 5' do
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # find the remainder of the unlucky divided by the lucky
-    remainder = ____________
+    remainder = unlucky % lucky
     expect(remainder).to eq(6)
   end
 
-  xit 'test 6' do
+  it 'test 6' do
     lucky = 7
     # Using the variable defined above,
     # find out if the lucky number is even
-    even = _________
+    even = lucky.even?
     expect(even).to eq(false)
   end
 
-  xit 'test 7' do
+  it 'test 7' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to the nearest whole number
-    rounded = _________
+    rounded = pi.to_i
     expect(rounded).to eq(3)
   end
 
-  xit 'test 8' do
+  it 'test 8' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to one decimal place
-    rounded = _________
+    rounded = pi.round(1)
     expect(rounded).to eq(3.1)
   end
 
-  xit 'test 9' do
+  it 'test 9' do
     pi = 3.14
     # Using the variable defined above,
     # round the number to the next highest whole number
-    rounded = _________
+    rounded = pi.to_f.ceil
+    # Returns the smallest number greater than or equal to float with a precision of ndigits decimal digits (default: 0).
     expect(rounded).to eq(4)
   end
 end
